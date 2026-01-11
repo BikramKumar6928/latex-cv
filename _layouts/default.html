@@ -24,10 +24,12 @@
         {% endfor %}
       </div>
 
-      {% if page.abstract %}<div class="AbstractMargins">
+      {% if page.abstract %}
+      <div class="AbstractMargins">
         <p class="LatexAbstract">Abstract</p>
         <p class="LatexAbstractText">{{ page.abstract }}</p>
-      </div>{% endif %}
+      </div>
+      {% endif %}
 
       <div class="{{ page.container_class | default: "col-1" }}">
         {{ content }}
