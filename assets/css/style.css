@@ -58,24 +58,26 @@
     padding-bottom: 15px;
 }
 
-.Section{
+.Section, h1{
     font-family: CMB;
     font-size: 33px;
     text-align: Left;
     margin-top: 13px;
     margin-bottom: 20px;
+    font-weight: normal;
 }
 
 
-.SubSection{
+.SubSection, h2{
     font-family: CMB;
     font-size: 29px;
     text-align: Left;
     margin-top: 13px;
     margin-bottom: 20px;
+    font-weight: normal;
 }
 
-.BodyText{
+.BodyText, p{
     font-family: CMR;
     font-size: 23px;
     text-align: Left;
@@ -85,23 +87,11 @@
     column-count: 1;
 }
 
-.BodyText2Col{
-    font-family: CMR;
-    font-size: 23px;
-    text-align: Left;
-    margin-top: 13px;
-    margin-bottom: 45px;
-    line-height: 125%;
+.BodyText2Col, .Col-2{
     column-count: 2;
 }
 
-.BodyText3Col{
-    font-family: CMR;
-    font-size: 23px;
-    text-align: Left;
-    margin-top: 13px;
-    margin-bottom: 45px;
-    line-height: 125%;
+.BodyText3Col, .Col-3{
     column-count: 3;
 }
 
@@ -152,5 +142,5 @@
 }
 
 .HUGE{
-    font-size: 33px;
+    font-size: 38px;
 }
