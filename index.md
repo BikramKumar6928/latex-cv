@@ -1,30 +1,88 @@
 ---
 layout: default
-title: Latex Jekyll
-author: Hamish Sams
-date: April 2020
-abstract: This is my first attempt at Jekyll and is a website designed to look just like a Latex document.
+title: Curriculum Vitae
+author: Bikram Kumar
+date: April 2024
+# abstract: This is my first attempt at Jekyll and is a website designed to look just like a Latex document.
+container_class: col-2
+links:
+  bk6928@gmail.com: mailto:bk6928@gmail.com
+  Github: https://github.com/BikramKumar6928
+  LinkedIn: https://www.linkedin.com/in/bikram-kumar-94b37ab1
+  +91 9473 347 457: tel:+919473347457
 ---
-# 1 &ensp; Introduction
-This has been my first attempt at Jekyll and with such it is likely not too great. I'd like to design this to work a bit more seamlessly aka without inline styling in the page.
-I imagine this is possible but not too sure how to do it yet. I also want to add more Latex style designs such as designed lists and sub sections etc.
+Experienced Software Developer with a strong background in Ruby, adept at deploying applications on Kubernetes and Docker. Skilled in Java development, with prior experience in building robust solutions utilizing Java frameworks.
 
+# Work Experience
 
-Body Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu molestie nibh. Integer faucibus aliquam congue. Praesent egestas, augue ac pharetra volutpat, arcu turpis tempor tortor, eget posuere mi sem in neque. Aliquam pretium dolor non mauris hendrerit, nec posuere sem interdum. Praesent malesuada nunc in nisi fringilla tempor. Integer non ante eros. Quisque lacinia ullamcorper scelerisque. Integer pulvinar nunc ipsum, eget placerat urna commodo vel. Nullam diam justo, egestas sollicitudin ligula sed, vehicula egestas justo. Sed dictum ipsum rutrum sagittis tempor. Etiam semper mauris varius, ultricies diam id, vestibulum odio.
+## Software Engineer - Eatclub (2022-Present)
 
-When $$a \ne 0$$, there are two solutions to $$ax^2 + bx + c = 0$$
+- Built and maintained third party integrations between Eatclub and Zomato/Swiggy.
+- Increased stability of system, leading to <1% of order rejections from ~2-3% of rejections.
+- Created a framework which made onboarding new third party in weeks instead of months.
+- Fixed bugs that led to precise tax calculations for Zomato.
+- Proposed and led the creation of pipelines and canary deployments.
+- Helped in creating a framework for async web requests using kafka and custom DSL.
+- Added alerts and logging that increased visibility, helping solve race conditions and duplicate order creation.
 
-$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+## Software Engineer - Amdocs (2019-2022)
 
+- Maintained and added features to product micro services as required, written in Java.
+- Worked with a callback mechanism which executes code when a message is received in RabbitMQ.
+- Created a basic model for new micro services to be written
+- Created process for the CI/CD tests used in build checks.
+- Automated parts of job that are done regularly to reduce man-hours and increased accessibility.
+- Used Virtual Machines to have whole workflow on cloud and used terminal for most of the tasks.
 
-## 1.2 &ensp; Text Styles
+# Education:-
 
-{: .Justified}
-Justified Body Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu molestie nibh. Integer faucibus aliquam congue. Praesent egestas, augue ac pharetra volutpat, arcu turpis tempor tortor, eget posuere mi sem in neque. Aliquam pretium dolor non mauris hendrerit, nec posuere sem interdum. Praesent malesuada nunc in nisi fringilla tempor. Integer non ante eros. Quisque lacinia ullamcorper scelerisque. Integer pulvinar nunc ipsum, eget placerat urna commodo vel. Nullam diam justo, egestas sollicitudin ligula sed, vehicula egestas justo. Sed dictum ipsum rutrum sagittis tempor. Etiam semper mauris varius, ultricies diam id, vestibulum odio.
+## B.Tech in Comp. Sci. (2015-2019)
+  
+- Indian Institute of Technology, Dhanbad
+- OGPA - 8.15.
+    
+## Higher Secondary School Certificate (CBSE), 2015
 
+- DAV Public School, Gaya, Bihar
+- Percentage - 93%
 
-{: .Justified .Col-2}
-2 Column Justified Body Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu molestie nibh. Integer faucibus aliquam congue. Praesent egestas, augue ac pharetra volutpat, arcu turpis tempor tortor, eget posuere mi sem in neque. Aliquam pretium dolor non mauris hendrerit, nec posuere sem interdum. Praesent malesuada nunc in nisi fringilla tempor. Integer non ante eros. Quisque lacinia ullamcorper scelerisque. Integer pulvinar nunc ipsum, eget placerat urna commodo vel. Nullam diam justo, egestas sollicitudin ligula sed, vehicula egestas justo. Sed dictum ipsum rutrum sagittis tempor. Etiam semper mauris varius, ultricies diam id, vestibulum odio.
+## Secondary School Certificate (ICSE), 2013
 
-{: .Justified .Col-3}
-3 Column Justified Body Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu molestie nibh. Integer faucibus aliquam congue. Praesent egestas, augue ac pharetra volutpat, arcu turpis tempor tortor, eget posuere mi sem in neque. Aliquam pretium dolor non mauris hendrerit, nec posuere sem interdum. Praesent malesuada nunc in nisi fringilla tempor. Integer non ante eros. Quisque lacinia ullamcorper scelerisque. Integer pulvinar nunc ipsum, eget placerat urna commodo vel. Nullam diam justo, egestas sollicitudin ligula sed, vehicula egestas justo. Sed dictum ipsum rutrum sagittis tempor. Etiam semper mauris varius, ultricies diam id, vestibulum odio.
+- Assembly of God Church School, Sodepur, West Bengal
+- Percentage:- 95.2%.
+
+# Internship and training
+
+## Indian Institute of Technology, Dhanbad - Intern, 2018
+  - Created modules on PHP framework for managing sports inventory and automating the inventory refilling process.
+  - Created module to manage and track the grants coming to professors from different institutions for performing research and distribution of funds among the researchers.
+
+# Technical Skills
+
+## Proficient
+
+- Ruby, Ruby on Rails, Redis, Postgres, Docker, Postman, Cassandra, Kubernetes, Helm, Maven, Git, HTML, CSS.
+
+## Intermediate
+
+- Java (8), Spring Boot, RabbitMQ, JanusGraph, Swagger API, Bash, Jenkins, Python.
+
+## Beginner
+
+- Javascript
+
+# Projects
+  
+## Expense Management Application
+
+- Implemented a REST based Expense management system containing intricate ways to define an income/expense.
+
+## Utilities Application
+  
+- Implemented a REST based application for maintaining To Do list and Workout planning based on different users.
+
+# Interests
+
+- Reading Novels and Books.
+- Watching TV Series.
+

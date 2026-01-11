@@ -7,6 +7,11 @@
     src: url(../fonts/cmuserif_bold_macroman/cmunbx-webfont.woff);
   }
 
+body {
+    font-family: CMR;
+    font-size: 23px;
+    text-align: Left;
+}
 
 .LatexTitle{
     font-family: CMR;
@@ -60,21 +65,21 @@
 
 .Section, h1{
     font-family: CMB;
+    font-weight: normal;
     font-size: 33px;
     text-align: Left;
     margin-top: 13px;
     margin-bottom: 20px;
-    font-weight: normal;
 }
 
 
 .SubSection, h2{
     font-family: CMB;
+    font-weight: normal;
     font-size: 29px;
     text-align: Left;
     margin-top: 13px;
     margin-bottom: 20px;
-    font-weight: normal;
 }
 
 .BodyText, p{
@@ -87,11 +92,31 @@
     column-count: 1;
 }
 
-.BodyText2Col, .Col-2{
+.inline-links {
+  display: flex;
+  gap: 1.5rem; /* spacing between links */
+  flex-wrap: wrap; /* wraps on smaller screens */
+  justify-content: center; /* centers the links horizontally */
+}
+
+.inline-links a {
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.inline-links a:hover {
+  text-decoration: underline;
+}
+
+.col-1{
+    column-count: 1;
+}
+
+.BodyText2Col, .col-2{
     column-count: 2;
 }
 
-.BodyText3Col, .Col-3{
+.BodyText3Col, .col-3{
     column-count: 3;
 }
 

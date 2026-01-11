@@ -17,14 +17,21 @@
       {% if page.author %} <p class="LatexName">{{ page.author }}</p> {% endif %}
       {% if page.date %} <p class="LatexDate">{{ page.date }}</p> {% endif %}
       
+      <div class="inline-links">
+        {% for link in page.links %}
+          <a href="{{ link[1] }}">{{ link[0] }}</a>
+          {% unless forloop.last %}<span class="separator">|</span>{% endunless %}
+        {% endfor %}
+      </div>
+
       {% if page.abstract %}<div class="AbstractMargins">
         <p class="LatexAbstract">Abstract</p>
         <p class="LatexAbstractText">{{ page.abstract }}</p>
       </div>{% endif %}
 
-      
-      {{ content }}
-
+      <div class="{{ page.container_class | default: "col-1" }}">
+        {{ content }}
+      </div>
 
     </div>
   </body>
