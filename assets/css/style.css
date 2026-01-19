@@ -175,6 +175,10 @@ body {
   .Margins, .LatexTitle {
     padding: 0 !important;
   }
+
+  .footerSize{
+    height: 5vh;
+  }
   
   body {
     margin: 0 !important;

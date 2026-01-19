@@ -2,7 +2,6 @@
 layout: default
 title: Curriculum Vitae
 author: Bikram Kumar
-date: April 2024
 # abstract: This is my first attempt at Jekyll and is a website designed to look just like a Latex document.
 container_class: col-2
 links:
