@@ -7,15 +7,19 @@
     src: url(../fonts/cmuserif_bold_macroman/cmunbx-webfont.woff);
   }
 
+html {
+  font-size: 100%;
+}
+
 body {
     font-family: CMR;
-    font-size: 23px;
+    font-size: 1.4375rem;
     text-align: Left;
 }
 
 .LatexTitle{
     font-family: CMR;
-    font-size: 40px;
+    font-size: 2.5rem;
     padding-top: 40vh;
     text-align: center;
     margin-bottom: 20px;
@@ -23,13 +27,13 @@ body {
 
 .LatexName{
     font-family: CMR;
-    font-size: 27px;
+    font-size: 1.6875rem;
     text-align: center;
     margin-bottom: 13px;
 }
 .LatexDate{
     font-family: CMR;
-    font-size: 27px;
+    font-size: 1.6875rem;
     text-align: center;
     margin-top: 13px;
     margin-bottom: 45px;
@@ -38,7 +42,7 @@ body {
 .LatexAbstract{
     font-family: CMB;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 1.5625rem;
     text-align: center;
     margin-bottom: 10px;
 }
@@ -46,7 +50,7 @@ body {
 .LatexAbstractText{
     margin-top:10px;
     font-family: CMR;
-    font-size: 21px;
+    font-size: 1.3125rem;
     text-align: center;
     text-align: justify;
     text-indent: 20px
@@ -66,7 +70,7 @@ body {
 .Section, h1{
     font-family: CMB;
     font-weight: normal;
-    font-size: 33px;
+    font-size: 2.0625rem;
     text-align: Left;
     margin-top: 13px;
     margin-bottom: 20px;
@@ -76,20 +80,26 @@ body {
 .SubSection, h2{
     font-family: CMB;
     font-weight: normal;
-    font-size: 29px;
+    font-size: 1.8125rem;
     text-align: Left;
     margin-top: 13px;
     margin-bottom: 20px;
 }
 
-.BodyText, p{
+.BodyText, p {
     font-family: CMR;
-    font-size: 23px;
+    font-size: 1.4375rem;
     text-align: Left;
     margin-top: 13px;
     margin-bottom: 45px;
     line-height: 125%;
     column-count: 1;
+}
+
+ul, ol, li {
+  font-family: CMR;
+  font-size: 1.4375rem;
+  line-height: 125%;
 }
 
 .inline-links {
@@ -131,47 +141,51 @@ body {
 }
 
 .tiny{
-    font-size: 8px;
+    font-size: 0.5rem;
 }
 
 .scriptsize{
-    font-size: 11px;
+    font-size: 0.6875rem;
 }
 
 .footnotesize{
-    font-size: 13px;
+    font-size: 0.8125rem;
 }
 
 .small{
-    font-size: 15px;
+    font-size: 0.9375rem;
 }
 
 .normalsize{
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .large{
-    font-size: 19px;
+    font-size: 1.1875rem;
 }
 
 .Large{
-    font-size: 23px;
+    font-size: 1.4375rem;
 }
 
 .LARGE{
-    font-size: 28px;
+    font-size: 1.75rem;
 }
 
 .huge{
-    font-size: 33px;
+    font-size: 2.0625rem;
 }
 
 .HUGE{
-    font-size: 38px;
+    font-size: 2.375rem;
 }
 
 /* Print styles at the bottom */
 @media print {
+  html {
+    font-size: 80%;
+  }
+
   .Margins, .LatexTitle {
     padding: 0 !important;
   }
@@ -186,11 +200,23 @@ body {
   }
   
   p , ul li, a, .LatexName, .LatexDate{
-    font-size: 14px !important;
+    font-size: 0.875rem !important;
+  }
+
+  strong, b, .cv-entry-header {
+    font-family: CMB;
+    font-weight: normal;
+  }
+
+  .LatexTitle {
+    font-size: 1.5rem !important;
+  }
+
+  h1 {
+    font-size: 1rem !important;
   }
 
   h1, .LatexTitle {
-    font-size: 18px !important;
     margin-top: 0px !important;
     margin-bottom: 5px !important;
   }
@@ -201,13 +227,46 @@ body {
   }
 
   h2 {
-    font-size: 16px !important;
+    font-size: 0.9rem !important;
     margin-top: 0px !important;
     margin-bottom: 5px !important;
   }
-  
+
   /* If you want to keep some specific margins */
   /* p, h1, h2, h3 {
     margin-bottom: 0.5rem !important;
   } */
+
+  p {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  body {
+    line-height: 110%;
+  }
+
+  ul, ol {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0;
+  }
+
+  li {
+    margin-bottom: 0 !important;
+  }
+
+  .inline-links {
+    font-size: 0.7rem !important;
+  }
+
+  a {
+    font-size: 0 !important;
+  }
+
+  a::after {
+    content: attr(href);
+    color: #000;
+    font-size: 0.7rem !important;
+  }
 }

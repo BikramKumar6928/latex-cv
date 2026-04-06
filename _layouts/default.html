@@ -3,7 +3,9 @@
 <!doctype html>
 <html>
   <head>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/cv.css">
+    <link rel="stylesheet" href="/assets/css/cv-filter.css">
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -19,7 +21,11 @@
       
       <div class="inline-links">
         {% for link in page.links %}
-          <a href="{{ link[1] }}">{{ link[0] }}</a>
+          {% if link[1] == '' %}
+            <span>{{ link[0] }}</span>
+          {% else %}
+            <a href="{{ link[1] }}">{{ link[0] }}</a>
+          {% endif %}
           {% unless forloop.last %}<span class="separator">|</span>{% endunless %}
         {% endfor %}
       </div>
@@ -38,6 +44,7 @@
 
     </div>
   </body>
+  <script src="/assets/js/cv-filter.js"></script>
   <footer class="footerSize">
 
   </footer>
